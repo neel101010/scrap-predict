@@ -1,0 +1,22 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block content %}
+<div class="company-page" style="padding:100px; padding-top:0px;">
+    <h1>{{company}}</h1>
+    <br>
+    <br>
+    <form action="/analyse/check/{{company}}" method="get">
+        <label for="opening">Enter Opening Price(in Rs.)</label>
+        <input type="number" name="opening">
+        <br>
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <h1>Description</h1>
+    {% autoescape off %}
+        {{description}}
+    {% endautoescape %}
+</div>
+{% endblock %}

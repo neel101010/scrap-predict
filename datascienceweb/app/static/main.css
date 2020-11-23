@@ -1,0 +1,27 @@
+.w-100 {
+    width: 100%!important;
+    height: 550px;
+}
+
+.my-login-button{
+padding: 8px 20px !important;
+}
+
+.login-li{
+margin-right: 5080px;
+}
+
+/*About Page*/
+
+/*Analyse*/
+.card {
+    width: 18rem;
+    margin: 50px;
+}
+
+
+/*rel*/
+.company-page{
+    padding: 100px;
+    padding-top: 10px}
+
