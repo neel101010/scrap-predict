@@ -1,15 +1,30 @@
 {% extends "navbar.html" %}
 
 {% block content %}
-<div class="my=about" >
-<div class="jumbotron">
-  <h1 class="display-4">Hello!</h1>
-  <p class="lead">This is a stock analyzing demo website which uses concept of Linear Regression built on Django Framework.</p>
-  <hr class="my-4">
-  <p>My name is <strong>NEEL BHAGAT</strong>.I am a second year student of Vivekand Institute Of Technology ,Mumbai</p>
-  <p>Email: neelnb11@gmail.com</p>
-  <p>Mobile number-8291597204</p>
-</div>
+<div class="my-about">
+  <div class="container">
+    <div class="row">
+      <h1 class="about-title">About Me</h1>
+    </div>
+    <hr>
+    <div class="row">
+      <p class="about-content">
+        Hello! My name is Neel Bhagat and I am a student of Vivekanand Eduaction Soceity's Institute Of Technology,
+        Mumbai pursuing Computer Engineering. During my second year of engineering I thought of making a stock prediction
+        model for my mini-project. Instead of using excel sheets of stock data of company, I thought of scrapping data from
+        in.finance.yahoo.com of Top Nifty-50 companies. I used django framework to built the website and my machine learning
+        model is Linear Regression. In Future, I am planning to improve this basic machine learning model to get better
+        results and to improve UI of website.
+        <br>
+        Thank You.
+      </p>
+    </div>
+    <hr>
+    <div class="row about-contact">
+      <p><b>Email Address:</b> neelnb11@gmail.com</p>
+      <p><b>Phone Number:</b> 8291597204</p>
+    </div>
+  </div>
 </div>
 {% endblock %}
 
