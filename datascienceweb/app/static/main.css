@@ -24,11 +24,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,99,255,1) 35%, rg
 }
 
 /*About Page*/
-.about-title, .method-title{
+.about-title, .method-title, .company-title, .analyse-title{
     text-align:center;
     padding:20px;
 }
-.about-content, .method-content{
+.about-content, .method-content, .company-content{
     text-align:center;
     padding:20px 20%;
 }
@@ -44,14 +44,38 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,99,255,1) 35%, rg
 }
 
 /*Analyse*/
-.card {
-    width: 18rem;
-    margin: 50px;
+
+
+
+/*company*/
+.company-form{
+    text-align: center;
+    width: auto;
+    margin: auto;
+    border: 2px solid black;
 }
 
+.form-content{
+    padding: 25px;
+}
 
-/*rel*/
-.company-page{
-    padding: 100px;
-    padding-top: 10px}
+.form-content label{
+    width:200px;
+}
+
+.form-content input{
+    width:200px;
+}
+.form-container{
+    padding: 25px;
+}
+
+.stock-thinking-img{
+    width:400px;
+}
+
+.predict-button{
+    background: #6c63ff;
+    border-radius: 20px;
+}
 

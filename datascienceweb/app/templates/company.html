@@ -1,22 +1,41 @@
 {% extends "navbar.html" %}
 {% load static %}
-
+{% load static %}
 {% block content %}
-<div class="company-page" style="padding:100px; padding-top:0px;">
-    <h1>{{company}}</h1>
-    <br>
-    <br>
-    <form action="/analyse/check/{{company}}" method="get">
-        <label for="opening">Enter Opening Price(in Rs.)</label>
-        <input type="number" name="opening">
-        <br>
-        <input type="submit">
-    </form>
-    <br>
-    <br>
-    <h1>Description</h1>
-    {% autoescape off %}
-        {{description}}
-    {% endautoescape %}
+<div class="container">
+    <div class="row">
+        <h1 class="company-title">{{name}}</h1>
+    </div>
+    <hr>
+    <div class="row">
+        <p class="company-content">
+            {{description}}
+        </p>
+    </div>
+    <div class="row">
+        <div class="container form-container">
+            <div class="row">
+                <div class="col-md-6 company-form">
+                    <form action="/analyse/check/{{company}}" method="get">
+                        <div class="form-content">
+                            <label for="opening" id="opening">Enter Opening Price(in Rs.)</label>
+                            <input type="number" name="opening" required>
+                        </div>
+<!--                        <div class="form-content">-->
+<!--                            <label for="period" id="period">Enter time period</label>-->
+<!--                            <input type="number" name="period" min="0" max="365" required>-->
+<!--                        </div>-->
+                        <input type="submit" class="predict-button" value="Predict Closing Price">
+                        <p>{{closing}}</p>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img class="stock-thinking-img" src="/static/stock-company-page.svg" alt="Stock Thinking">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 {% endblock %}

@@ -1,0 +1,52 @@
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+/*Navbar*/
+.navbar{
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(108,99,255,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.nav-signup-button{
+	background-color: #2f2e41;
+	border-radius: 25px;
+}
+
+/*Main Page*/
+
+
+.main-button{
+    width:100%
+}
+
+.main-info, .main-img{
+    padding:3%;
+}
+
+/*About Page*/
+.about-title, .method-title, company-title{
+    text-align:center;
+    padding:20px;
+}
+.about-content, .method-content, .company-content{
+    text-align:center;
+    padding:20px 20%;
+}
+
+.about-contact{
+    text-align:center;
+}
+
+/*Methodology*/
+.method-img{
+    margin: 0 auto;
+    width:500px;
+}
+
+/*Analyse*/
+
+
+
+/*company*/
+
+

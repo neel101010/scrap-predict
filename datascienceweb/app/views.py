@@ -10,7 +10,10 @@ def index(request):
 
 # Analyse page
 def analyse(request):
-    company_list = companyGet()
+    company_list_temp = companyGet()
+    company_list_temp = zip(company_list_temp["name"], company_list_temp["last_price"], company_list_temp["change"],
+                            company_list_temp["per_change"], company_list_temp["volume"], company_list_temp["link"])
+    company_list = {"company_list": company_list_temp}
     return render(request, 'analyse.html', company_list)
 
 
@@ -23,8 +26,9 @@ def info(request, company):
 # Predicted Closing Price Calculation
 def cal(request, company):
     x = request.GET.get('opening')
-    info = closingGet(x, company)
-    return render(request, 'predict.html', info)
+    y = request.GET.get('period')
+    info = closingGet(x, y, company)
+    return render(request, 'company.html', info)
 
 
 # About page
